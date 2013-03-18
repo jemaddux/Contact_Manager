@@ -5,5 +5,6 @@ module PhoneNumbersHelper
       result += content_tag :li, number  
     end
     result +=  "</ul>"
+    result.html_safe
   end
 end

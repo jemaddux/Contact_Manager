@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-18T13:44:42-06:00">2013-03-18T13:44:42-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-18T14:02:45-06:00">2013-03-18T14:02:45-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">86.88%</span></span>
+    (<span class="covered_percent"><span class="yellow">86.92%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.99
+       <span class="green">
+         1.01
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>38</b> files in total.
-    <b>320</b> relevant lines. 
-    <span class="green"><b>278</b> lines covered</span> and
+    <b>321</b> relevant lines. 
+    <span class="green"><b>279</b> lines covered</span> and
     <span class="red"><b>42</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -123,11 +123,11 @@
       <tr>
         <td class="strong"><a href="#2f9eeeb618ee4f155d4aad64a083aa29e693d959" class="src_link" title="app/helpers/phone_numbers_helper.rb">app/helpers/phone_numbers_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>6</td>
-        <td>6</td>
+        <td>10</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>3.3</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
@@ -1171,7 +1171,7 @@
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    @phone_number = PhoneNumber.new</code>
+          <code class="ruby">    @phone_number = PhoneNumber.new(person_id: params[:person_id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -1291,7 +1291,7 @@
         <li class="missed" data-hits="0" data-linenumber="47">
           
           
-          <code class="ruby">        format.html { redirect_to @phone_number, notice: 'Phone number was successfully created.' }</code>
+          <code class="ruby">        format.html { redirect_to @phone_number.person, notice: 'Phone number was successfully created.' }</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="48">
@@ -1885,8 +1885,8 @@
     <h3>app/helpers/phone_numbers_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1906,14 +1906,14 @@
           <code class="ruby">  def print_numbers(phone_numbers)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="3">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="3">
+          <span class="hits">5</span>
           
           <code class="ruby">    result  =&quot;&lt;ul&gt;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="4">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="4">
+          <span class="hits">8</span>
           
           <code class="ruby">    phone_numbers.collect{|x| x.number }.each  do |number|</code>
         </li>
@@ -1930,19 +1930,25 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="7">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="7">
+          <span class="hits">5</span>
           
           <code class="ruby">    result +=  &quot;&lt;/ul&gt;&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="5" data-linenumber="8">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    result.html_safe</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
