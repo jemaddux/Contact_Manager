@@ -27,15 +27,23 @@ describe PhoneNumbersController do
     {number: "123-456-7890"}
   end
 
-  before(:each) do
-    @person = Person.create(first_name: "Sample", last_name: "Name")
-    @phone_number = @person.phone_numbers.create(number: "2024605555")
-  end
+  # before(:each) do
+  #   @person = Person.create(first_name: "Sample", last_name: "Name")
+  #   @phone_number = @person.phone_numbers.create(number: "2024605555")
+  # end
 
+  # def valid_attributes
+  #   { "number" => "MyString", "person" => Person.new }
+  # end
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # PhoneNumbersController. Be sure to keep this updated too.
+  # before(:each) do
+  #   @person = Person.create(first_name: "Sample", last_name: "Name")
+  #   @phone_number = @person.phone_numbers.create(number: "2024605555")
+  # end
+
+  # # This should return the minimal set of values that should be in the session
+  # # in order to pass any filters (e.g. authentication) defined in
+  # # PhoneNumbersController. Be sure to keep this updated too.
   # def valid_session
   #   {}
   # end

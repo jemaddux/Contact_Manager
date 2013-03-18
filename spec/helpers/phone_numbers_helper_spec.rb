@@ -1,15 +1,24 @@
 require 'spec_helper'
 
-# Specs in this file have access to a helper object that includes
-# the PhoneNumbersHelper. For example:
-#
-# describe PhoneNumbersHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       helper.concat_strings("this","that").should == "this that"
-#     end
-#   end
-# end
 describe PhoneNumbersHelper do
-  
+  describe "print_numbers" do
+
+    let :number_a do
+      PhoneNumber.new(number: "1234567")
+    end
+
+    let :number_b do
+      PhoneNumber.new(number: "7654321")
+    end
+
+    it "outputs a comma-separated list of phone numbers" do
+      phone_numbers = [number_a, number_b]
+      result = "<ul><li>1234567</li><li>7654321</li></ul>"
+      print_numbers(phone_numbers).should == result
+    end
+
+    it "outputs a single phone number" do
+      print_numbers([number_a]).should == "<ul><li>1234567</li></ul>"
+    end
+  end  
 end
