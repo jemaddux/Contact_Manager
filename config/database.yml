@@ -29,7 +29,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: test-postgres_production
+  database: contact-unicorn
   pool: 5
   # username: test-postgres
   # password:
