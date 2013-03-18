@@ -9,8 +9,7 @@ group :development, :test do
   gem 'unicorn'
   gem 'heroku'
   gem 'jquery-rails'
-  gem "mocha"
-  gem "nifty-generators"
+  gem 'simplecov'
 end
 
 group :assets do

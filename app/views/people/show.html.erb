@@ -1,16 +1,15 @@
-<% title "Person" %>
+<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First Name:</strong>
+  <b>First name:</b>
   <%= @person.first_name %>
 </p>
-<p>
-  <strong>Lastname:</strong>
-  <%= @person.lastname %>
-</p>
 
 <p>
-  <%= link_to "Edit", edit_person_path(@person) %> |
-  <%= link_to "Destroy", @person, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", people_path %>
+  <b>Last name:</b>
+  <%= @person.last_name %>
 </p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
