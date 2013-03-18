@@ -3,12 +3,14 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.12'
 gem 'pg'
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
   gem "rspec-rails"
   gem 'unicorn'
   gem 'heroku'
   gem 'jquery-rails'
+  gem "mocha"
+  gem "nifty-generators"
 end
 
 group :assets do
@@ -16,4 +18,5 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+
 

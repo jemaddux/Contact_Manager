@@ -1,3 +1,6 @@
+Find me at: <a href="http://contacts-unicorn.herokuapp.com/">contacts-unicorn.herokuapp.com</a>
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
