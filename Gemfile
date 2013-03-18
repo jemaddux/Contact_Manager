@@ -10,6 +10,8 @@ group :development, :test do
   gem 'heroku'
   gem 'jquery-rails'
   gem 'simplecov'
+  #gem 'capybara'
+  gem 'capybara', git: 'https://github.com/jnicklas/capybara', :ref => 'd153635e6546ecc742e2b805390bc42a1e863d7c'
 end
 
 group :assets do
