@@ -1,0 +1,8 @@
+<ul>
+  <% email_addresses.each do |email| %>
+    <li id="li" class="li">
+      <%= email.address %> 
+      <%= link_to "Edit", edit_email_address_path(email) %>
+    </li>
+  <% end %>
+</ul>

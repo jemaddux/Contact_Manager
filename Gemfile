@@ -2,16 +2,18 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'pg'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3'
   gem "rspec-rails"
   gem 'unicorn'
+  gem 'guard-rspec'
+  gem 'rb-fsevent', '~> 0.9'
   gem 'heroku'
-  gem 'jquery-rails'
   gem 'simplecov'
   #gem 'capybara'
-  gem 'capybara', git: 'https://github.com/jnicklas/capybara', :ref => 'd153635e6546ecc742e2b805390bc42a1e863d7c'
+  gem 'capybara'#, git: 'https://github.com/jnicklas/capybara', :ref => 'd153635e6546ecc742e2b805390bc42a1e863d7c'
 end
 
 group :assets do
