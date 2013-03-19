@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-19T15:29:56-06:00">2013-03-19T15:29:56-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-19T15:55:57-06:00">2013-03-19T15:55:57-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -343,7 +343,7 @@
       <tr>
         <td class="strong"><a href="#47db7cce97e00d45d7771ae53586738e281c4dd8" class="src_link" title="spec/integration/people_views_spec.rb">spec/integration/people_views_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>28</td>
+        <td>35</td>
         <td>14</td>
         <td>14</td>
         <td>0</td>
@@ -775,7 +775,7 @@
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    @email_address = EmailAddress.new</code>
+          <code class="ruby">    @email_address = EmailAddress.new(person_id: params[:person_id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -6853,7 +6853,7 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should have edit links for each phone number&quot; do</code>
+          <code class="ruby">    it &quot;has edit links for each phone number&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
@@ -6865,52 +6865,94 @@
         <li class="covered" data-hits="2" data-linenumber="20">
           <span class="hits">2</span>
           
-          <code class="ruby">        page.should have_link(&quot;Edit&quot;, href: edit_phone_number_path(phone_number))</code>
+          <code class="ruby">        page.should have_link(&quot;Edit&quot;, </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">          href: edit_phone_number_path(phone_number))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">    # it &quot;shows each of the email addresses&quot; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    #   page.should have_selector('li', text: &quot;foo@bar.com&quot;)</code>
+          <code class="ruby">    # it &quot;has an add email address link&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">    # end #####stupid capybara</code>
+          <code class="ruby">    #   @person.email_addresses.each do |email_address|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    #     page.should have_link(&quot;New&quot;, href: new_email_address(email_address))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    #   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">    # end ##### stupid capybara</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    # it &quot;shows each of the email addresses&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    #   page.should have_selector('li', text: &quot;foo@bar.com&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">    # end ##### stupid capybara</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>

@@ -1028,6 +1028,13 @@
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/johnmaddux/Dropbox/Code/contact_manager/spec/models/email_address_spec.rb": [
@@ -1503,6 +1510,6 @@
         null
       ]
     },
-    "timestamp": 1363728596
+    "timestamp": 1363730157
   }
 }

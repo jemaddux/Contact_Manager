@@ -15,14 +15,21 @@ describe "the views for people", type: :request do
       visit person_path(@person)
     end
 
-    it "should have edit links for each phone number" do
+    it "has edit links for each phone number" do
       @person.phone_numbers.each do |phone_number|
-        page.should have_link("Edit", href: edit_phone_number_path(phone_number))
+        page.should have_link("Edit", 
+          href: edit_phone_number_path(phone_number))
       end
     end
 
+    # it "has an add email address link" do
+    #   @person.email_addresses.each do |email_address|
+    #     page.should have_link("New", href: new_email_address(email_address))
+    #   end
+    # end ##### stupid capybara
+
     # it "shows each of the email addresses" do
     #   page.should have_selector('li', text: "foo@bar.com")
-    # end #####stupid capybara
+    # end ##### stupid capybara
   end
 end
