@@ -2,6 +2,8 @@ require 'spec_helper'
 require 'capybara/rspec'
 
 describe "the views for people", type: :request do
+  include Capybara::DSL
+
   before(:all) do
     @person = Person.create(first_name: "John", last_name: "Doe")
     number_a = @person.phone_numbers.create(number: "1234567")
