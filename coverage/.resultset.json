@@ -357,6 +357,10 @@
       "/Users/johnmaddux/Dropbox/Code/contact_manager/app/models/company.rb": [
         1,
         1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/johnmaddux/Dropbox/Code/contact_manager/app/controllers/email_addresses_controller.rb": [
@@ -1882,7 +1886,6 @@
         1,
         null,
         1,
-        1,
         null,
         null
       ],
@@ -1928,6 +1931,6 @@
         null
       ]
     },
-    "timestamp": 1363731120
+    "timestamp": 1363808482
   }
 }

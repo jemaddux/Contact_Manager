@@ -1,6 +1,6 @@
 class PhoneNumber < ActiveRecord::Base
-  attr_accessible :number, :person_id
+  attr_accessible :number, :contact_id
   validates :number, presence: true
-  validates :person, presence: true
-  belongs_to :person
+  validates :contact, presence: true
+  belongs_to :contact, polymorphic: true
 end
